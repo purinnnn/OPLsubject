@@ -1,0 +1,6 @@
+pen
+remote control
+ball
+alarm
+gamepad
+toy
