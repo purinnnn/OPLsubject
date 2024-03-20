@@ -39,9 +39,15 @@ yolov5 https://github.com/ultralytics/yolov5?tab=readme-ov-file
 四元数（Quaternion）和旋转 +欧拉角 https://www.cnblogs.com/jins-note/p/9512719.html
 四元数与欧拉角（Yaw、Pitch、Roll）的转换（含python代码参考） https://blog.csdn.net/xiaoma_bk/article/details/79082629
 
+11、像素-相机-世界坐标系之间的转换
+图像处理——4个坐标系及相关转换图像像素坐标系 图像物理坐标系 相机坐标系 世界坐标系 https://blog.csdn.net/MengYa_Dream/article/details/120233806
+世界坐标系，相机坐标系，图像坐标系，像素坐标系的转换 https://zhuanlan.zhihu.com/p/282497081
+世界、相机、图像和像素坐标之间的转换 https://mazhengg.github.io/2019/03/29/%E4%B8%96%E7%95%8C%E3%80%81%E7%9B%B8%E6%9C%BA%E3%80%81%E5%9B%BE%E5%83%8F%E5%92%8C%E5%83%8F%E7%B4%A0%E5%9D%90%E6%A0%87%E4%B9%8B%E9%97%B4%E7%9A%84%E8%BD%AC%E6%8D%A2/
+世界坐标系,相机坐标系和图像坐标系的转换(Python) https://blog.csdn.net/guyuealian/article/details/104184551
+
 二、问题与解决
 1、python安装后，输入cmd，输入python，显示的版本还是以前的版本，这个如何更新到新的版本？
-https://www.zhihu.com/question/493547164#:~:text=1.%E9%A6%96%E5%85%88%E8%BF%99%E6%98%AF%E5%92%8C%E4%B8%AA%E4%BA%BA%E7%BB%88%E7%AB%AF%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E8%AE%BE%E7%BD%AE%E7%9B%B8%E5%85%B3%E7%9A%84%E4%B8%80%E4%B8%AA%E9%97%AE%E9%A2%98%EF%BC%8C%E5%BD%93%E4%BD%A0%E5%AE%89%E8%A3%85%E4%BA%86%E6%96%B0%E7%89%88%E6%9C%AC%E6%B2%A1%E6%9C%89%E8%A6%86%E7%9B%96%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E4%B8%AD%E6%9C%89%E5%85%B3python%E7%9A%84%E8%AE%BE%E7%BD%AE%E6%98%AF%EF%BC%8C%E5%8D%B3%E4%BD%BF%E6%96%B0%E7%89%88%E6%9C%AC%E5%AE%89%E8%A3%85%E5%AE%8C%EF%BC%8Ccmd%E4%B8%AD%E8%BF%90%E8%A1%8Cpython%E4%BB%8D%E6%98%AF%E6%89%A7%E8%A1%8C%E4%BA%86%E6%97%A7%E7%89%88%E6%9C%AC%E3%80%82%202.%E5%A6%82%E4%BD%95%E8%AE%BE%E7%BD%AEpython%E7%9A%84%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E4%BA%86%EF%BC%9F%20%E4%BB%A5win7%E4%B8%BA%E4%BE%8B%EF%BC%8C%E8%AE%A1%E7%AE%97%E6%9C%BA--%E5%8F%B3%E5%87%BB--%E5%B1%9E%E6%80%A7--%E9%AB%98%E7%BA%A7%E7%B3%BB%E7%BB%9F%E8%AE%BE%E7%BD%AE--%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%20%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E8%AE%BE%E7%BD%AE%203.%E8%AE%BE%E7%BD%AE%E6%9C%89%E4%B8%A4%E7%A7%8D%E6%96%B9%E5%BC%8F%EF%BC%8C%E4%B8%80%E6%98%AF%E7%9B%B4%E6%8E%A5%E5%B0%86python%E6%96%B0%E7%89%88%E6%9C%AC%E7%9A%84,%E5%AE%89%E8%A3%85%E7%9B%AE%E5%BD%95%20%E2%80%9CXXpython%E2%80%9D%E5%8A%A0%E5%85%A5%E5%88%B0path%E4%B8%AD%EF%BC%8C%E4%BA%8C%E6%98%AF%E5%8F%AF%E4%BB%A5%E6%96%B0%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%8F%ABpythonhome%3D%E2%80%9Cxxxpython%E2%80%9D%E7%9A%84%E5%8F%98%E9%87%8F%EF%BC%8C%E7%84%B6%E5%90%8E%E5%86%8Dpath%E4%B8%AD%E6%B7%BB%E5%8A%A0%20%25pythonhome%25%2C%E6%8E%A8%E8%8D%90%E7%AC%AC%E4%BA%8C%E7%A7%8D%E8%AE%BE%E7%BD%AE%E6%96%B9%E5%BC%8F%E3%80%82%204.%E8%AE%BE%E7%BD%AE%E5%AE%8C%E5%90%8E%E4%B8%8D%E7%94%A8%E9%87%8D%E5%90%AF%E7%94%B5%E8%84%91%EF%BC%8C%E4%BD%86%E6%98%AF%E4%B8%80%E5%AE%9A%E8%A6%81%E9%87%8D%E6%96%B0%E6%89%93%E5%BC%80cmd%20%E7%AA%97%E5%8F%A3%E3%80%82
+https://www.zhihu.com/question/493547164/answer/2187893858
 2、ERROR: No .egg-info directory found in C:\xxx\xx\xxx
 https://blog.csdn.net/u013066244/article/details/130039052
 3、No module named ‘_distutils_hack‘
