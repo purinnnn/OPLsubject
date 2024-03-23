@@ -26,7 +26,7 @@ openai whisper https://github.com/openai/whisper
 语音识别whisper的介绍、安装、错误记录 https://blog.csdn.net/zdm_0301/article/details/133854913
 OpenAI语音识别模型Whisper原理介绍以及代码演示 https://www.bilibili.com/video/BV1SA4m137ta/?vd_source=131c932e072eb6d1f0ace7296dc15b66
 
-8、what’s that⽅向:使⽤yolov5完成给定数据集的⽬标检测训练
+8、使⽤yolov5完成给定数据集的⽬标检测训练
 2023最新pytorch安装（超详细版） https://blog.csdn.net/weixin_44752340/article/details/130542629
 pycharm安装教程配置环境 https://wenku.csdn.net/answer/2g4r2cku2t
 yolov5 https://github.com/ultralytics/yolov5?tab=readme-ov-file
@@ -45,12 +45,27 @@ yolov5 https://github.com/ultralytics/yolov5?tab=readme-ov-file
 世界、相机、图像和像素坐标之间的转换 https://mazhengg.github.io/2019/03/29/%E4%B8%96%E7%95%8C%E3%80%81%E7%9B%B8%E6%9C%BA%E3%80%81%E5%9B%BE%E5%83%8F%E5%92%8C%E5%83%8F%E7%B4%A0%E5%9D%90%E6%A0%87%E4%B9%8B%E9%97%B4%E7%9A%84%E8%BD%AC%E6%8D%A2/
 世界坐标系,相机坐标系和图像坐标系的转换(Python) https://blog.csdn.net/guyuealian/article/details/104184551
 
+12、ubuntu中ros的安装与使用
+Ubuntu20.04.4安装ROS Noetic详细教程 https://zhuanlan.zhihu.com/p/515361781
+ROS基础(一)：ROS通讯之话题(topic)通讯 https://blog.csdn.net/allenhsu6/article/details/112334048
+
+13、编写⼀个prompt, 通过调⽤任意⼤语⾔模型，实现对⼀条指令的任务拆解。
+面向开发者的Prompt Engineering https://prompt-engineering.xiniushu.com/
+动手学大模型应用开发 https://datawhalechina.github.io/llm-universe/#/
+百度智能云 https://console.bce.baidu.com/qianfan/ais/console/applicationConsole/application
+
 二、问题与解决
 1、python安装后，输入cmd，输入python，显示的版本还是以前的版本，这个如何更新到新的版本？
 https://www.zhihu.com/question/493547164/answer/2187893858
+
 2、ERROR: No .egg-info directory found in C:\xxx\xx\xxx
 https://blog.csdn.net/u013066244/article/details/130039052
+
 3、No module named ‘_distutils_hack‘
 https://blog.csdn.net/weixin_38739735/article/details/127633988
+
 4、运行yolov5训练时遇到Exception: Dataset not found ❌
 https://blog.csdn.net/weixin_45004544/article/details/134687048
+
+5、在 ROS 系统中，遇到 roscore 无任何反应，解决办法。
+https://blog.csdn.net/qq_50840738/article/details/126018200
