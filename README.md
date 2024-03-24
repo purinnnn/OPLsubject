@@ -83,7 +83,7 @@
 
 3. 选定刚才建立的虚拟环境作为python解释器
    
-   <img title="" src="file:///C:/Users/姚俞泽/Desktop/屏幕截图%202024-03-24%20220152.png" alt="" data-align="center">
+   <img src="file:///C:/Users/姚俞泽/AppData/Roaming/marktext/images/2024-03-25-03-16-38-屏幕截图%202024-03-24%20220152.png" title="" alt="" data-align="center">
 
 4. 在代码中右键选择“运行Python”-“在终端中运行Python文件”
 
@@ -93,7 +93,7 @@
 
 7. 录制好的音频文件“recorded_audio.wav”被保存到“robot.py”同目录下
    
-   ---
+   
 
 > 参考学习链接：
 > 
@@ -174,8 +174,6 @@
 
 <img title="" src="file:///C:/Users/姚俞泽/AppData/Roaming/marktext/images/2024-03-24-23-57-02-image.png" alt="" data-align="center">
 
----
-
 > 参考学习链接：
 > 
 > （1）openai whisper https://github.com/openai/whisper
@@ -211,19 +209,10 @@
 6. 保存：点击save，保存txt至`E:\opl\OPLsubject\yolov5\datasets\subject\labels\train`
 
 7. 文件目录结构如下：
+   
+   ![](C:\Users\姚俞泽\AppData\Roaming\marktext\images\2024-03-25-03-18-37-image.png)
 
-└─yolov5
-
-    └─datasets
-       └─subject
-           ├─images
-           │  ├─test
-           │  └─train
-           └─labels
-               ├─test
-               └─train
-
-<img title="" src="file:///C:/Users/姚俞泽/Desktop/屏幕截图%202024-03-24%20231559.png" alt="" data-align="center" width="884">
+![](C:\Users\姚俞泽\AppData\Roaming\marktext\images\2024-03-25-03-18-26-屏幕截图%202024-03-24%20231559.png)
 
 #### yolov5模型训练
 
@@ -235,7 +224,7 @@
 
 4. 训练自己的数据（添加数据配置文件）：在yolov5/data文件夹下新建subject.yaml
    
-   ![](C:\Users\姚俞泽\Desktop\屏幕截图%202024-03-24%20232731.png)
+   ![](C:\Users\姚俞泽\AppData\Roaming\marktext\images\2024-03-25-03-18-58-屏幕截图%202024-03-24%20232731.png)
    
    其中：
    
@@ -253,7 +242,7 @@
 
 7. 模型训练的可视化结果以及训练好的模型保存在runs文件夹下
    
-   ![](C:\Users\姚俞泽\Desktop\屏幕截图%202024-03-24%20233827.png)
+   ![](C:\Users\姚俞泽\AppData\Roaming\marktext\images\2024-03-25-03-19-17-屏幕截图%202024-03-24%20233827.png)
 
 #### 模型测试
 
@@ -263,11 +252,9 @@
 
 3. 测试结果保存在runs/detect/exp下
    
-   <img title="" src="file:///C:/Users/姚俞泽/Desktop/屏幕截图%202024-03-24%20234338.png" alt="" width="725" data-align="center">
+   ![](C:\Users\姚俞泽\AppData\Roaming\marktext\images\2024-03-25-03-19-31-屏幕截图%202024-03-24%20234338.png)
    
    <img title="" src="file:///E:/opl/OPLsubject/yolov5/runs/detect/exp/11.jpg" alt="" data-align="center" width="331"><img title="" src="file:///E:/opl/OPLsubject/yolov5/runs/detect/exp/12.jpg" alt="" width="328" data-align="center">
-
----
 
 > 参考学习链接：
 > 
@@ -305,8 +292,6 @@ ii. 模型返回结果：MetaAction("move",sofa”,None),MetaAction("findperson"
 7. 终端窗口以json格式输出任务拆解结果
    
    <img src="file:///C:/Users/姚俞泽/AppData/Roaming/marktext/images/2024-03-24-23-59-46-image.png" title="" alt="" data-align="center">
-   
-   ---
 
 > 参考学习链接：
 > 
@@ -337,8 +322,6 @@ ii. 模型返回结果：MetaAction("move",sofa”,None),MetaAction("findperson"
 
 <img src="file:///C:/Users/姚俞泽/AppData/Roaming/marktext/images/2024-03-25-00-00-54-image.png" title="" alt="" data-align="center">
 
----
-
 > 参考学习链接：
 > 
 > 百度智能云平台 https://console.bce.baidu.com/ai/?fromai=1#/ai/body/overview/index
@@ -368,8 +351,6 @@ ii. 模型返回结果：MetaAction("move",sofa”,None),MetaAction("findperson"
 
 <img src="file:///C:/Users/姚俞泽/AppData/Roaming/marktext/images/2024-03-25-00-01-42-image.png" title="" alt="" data-align="center">
 
----
-
 > 参考学习链接：
 > 
 > 百度智能云平台 https://console.bce.baidu.com/ai/?fromai=1#/ai/body/overview/index
@@ -386,7 +367,7 @@ ii. 模型返回结果：MetaAction("move",sofa”,None),MetaAction("findperson"
 
 #### 1、理解四个坐标之间的几何关系
 
-<img title="" src="file:///C:/Users/姚俞泽/Desktop/坐标关系.png" alt="" data-align="center" width="686">
+<img title="" src="file:///C:/Users/姚俞泽/AppData/Roaming/marktext/images/2024-03-25-03-20-38-坐标关系.png" alt="" width="776" data-align="center">
 
 - Ow−XwYwZw:世界坐标系，描述相机位置，单位:m
 - Oc−XcYcZc:相机坐标系，光心为原点，单位：m
@@ -445,8 +426,6 @@ Zc是空间点P的深度信息。此时，投影点p的单位还是mm，并不�
 ![](C:\Users\姚俞泽\AppData\Roaming\marktext\images\2024-03-25-00-16-32-image.png)
 
 Zc是深度信息：所以一个空间中的坐标点，可以在图像中找到一个对应的像素点，但是，通过图像中的一个点找到它在空间中对应的点就很难。因为Zc（深度信息）未知。
-
----
 
 > 参考学习链接：
 > 
@@ -567,8 +546,6 @@ int main(int argc, char **argv){
 
 ![](C:\Users\姚俞泽\AppData\Roaming\marktext\images\2024-03-25-02-43-36-d940ca3edb6bb4fc11b87953cd5a0da.jpg)
 
----
-
 ##### 创建node实现message的发布与订阅（python版本）
 
 ###### publisher
@@ -622,8 +599,6 @@ if __name__ == '__main__':
 ```
 
 ![](C:\Users\姚俞泽\AppData\Roaming\marktext\images\2024-03-25-02-44-42-7164270c06c444972bb143634267db0.jpg)
-
----
 
 > 参考学习链接：
 > 
