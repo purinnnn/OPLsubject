@@ -1,4 +1,4 @@
-​RoboCuo@home|OPL@Yao Yuze
+​RoboCup@home|OPL@Yao Yuze
 
 # 一、必做题
 
